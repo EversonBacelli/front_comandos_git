@@ -1,0 +1,28 @@
+
+{{>header}}
+
+<br>
+    {{>search}}
+
+
+<br>
+ <table>
+    <thead>
+        <tr> 
+             <th>N°</th>
+             <th>Objetivo</th>
+             <th>Descrição</th>
+             <th>Comando</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each response}}
+            <tr>
+                <td>{{this.id}}</td>
+                <td>{{this.objetivo}}</td>
+                <td>{{this.descricao}}</td>
+                <td>{{this.comando}}</td>
+            </tr>
+        {{/each}}
+    </tbody>
+ </table>

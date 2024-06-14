@@ -1,0 +1,55 @@
+
+body{
+    background-image: url(/img/fundo.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: top;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.head{
+    color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 95%;
+    background-color: red;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px white;
+    text-shadow: 1px 1px 2px gold;
+
+}
+
+.procura{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.procura input{
+    width: 300px;
+    border: solid 1px green;
+    border-radius: 20px;
+    height: 20px;
+    padding-left: 20px;
+}
+
+table{
+    width: 90%;
+}
+
+th{
+    background-color: blue;
+    border: solid white 2px;
+}
+
+td{
+    border: solid gray 2px;
+    background-color: black;
+    opacity: 0.8;
+    border-radius: 5px;
+}

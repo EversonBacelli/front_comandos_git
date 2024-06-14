@@ -5,7 +5,7 @@ import express from "express";
 // instantiate a router (miniature version of the app object, capable of doing all the same things that the app object does)
 const router = express.Router();
 // export it with a name so you can tell them apart in the index.js file
-export { router as ExampleRouter };
+export { router };
 
 // here's an example route that you can use to test that this is working
 // it's a good idea to only set routes under a specific path for each router,
