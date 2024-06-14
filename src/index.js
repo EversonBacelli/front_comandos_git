@@ -6,7 +6,6 @@ import { router } from "./routes/rotas.js";
 const app = express();
 
 
-app.use("/", router);
 
 const hbs = exphbs.create({
   partialsDir: ["views/partials"]
@@ -26,7 +25,7 @@ app.use(express.static("public"))
 
 
 
-app.get("/view_comandos", async (req, res) => {
+app.get("/", async (req, res) => {
   const url = "https://railwaynodetemplate-production.up.railway.app/comandos"
   const response = await fetch(url)
     .then(response =>{
