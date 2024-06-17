@@ -53,3 +53,7 @@ td{
     opacity: 0.8;
     border-radius: 5px;
 }
+
+.invisivel{
+    display: none;
+}
