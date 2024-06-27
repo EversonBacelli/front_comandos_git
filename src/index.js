@@ -29,7 +29,7 @@ app.use(express.static("public"))
 
 
 app.get("/", async (req, res) => {
-  const url = process.env.url_railway
+  const url = {{url_railway}}
   const response = await fetch(url)
     .then(response =>{
        return response.json()
@@ -42,7 +42,7 @@ app.get("/", async (req, res) => {
 
 
 
-const port = process.env.PORT;
+const port = {{PORT}};
 
 
 app.listen(port, () => {
