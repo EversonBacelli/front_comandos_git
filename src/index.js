@@ -1,9 +1,12 @@
 import express, { json } from "express";
 import exphbs from "express-handlebars"
+import dotenv from "dotenv"
+
 
 import { router } from "./routes/rotas.js";
 
 const app = express();
+dotenv.config()
 
 
 
@@ -26,7 +29,7 @@ app.use(express.static("public"))
 
 
 app.get("/", async (req, res) => {
-  const url = "https://railwaynodetemplate-production.up.railway.app/comandos"
+  const url = process.env.url_railway
   const response = await fetch(url)
     .then(response =>{
        return response.json()
@@ -34,13 +37,12 @@ app.get("/", async (req, res) => {
     .then( response => {
        return response[0]
     })
-  console.log(response)
   res.render("home",{response})
 });
 
 
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT;
 
 
 app.listen(port, () => {
