@@ -1,9 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Ga+Maamli&display=swap');
 
 body{
-    background-image: url(/img/fundo.jpeg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-position: top;
+    background-color: black;
     color: white;
     display: flex;
     justify-content: center;
@@ -11,7 +9,7 @@ body{
 }
 
 .head{
-    color: black;
+    color: white;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -20,7 +18,9 @@ body{
     border-radius: 20px;
     box-shadow: 5px 5px 5px white;
     text-shadow: 1px 1px 2px gold;
-
+    font-family: Ga Maamli;
+    font-size: 25px;
+    text-shadow: 4px 2px 2px black;
 }
 
 .procura{
@@ -40,7 +40,13 @@ body{
 
 table{
     width: 90%;
-}
+    background-image: url(/img/git_fundo.png);
+    background-repeat: no-repeat;
+    background-size: 70% 90%;
+    background-position:  right center;
+    box-shadow: 0 -10px 20px -5px rgba(115,115,115,0.75);
+    margin-bottom: 20px;
+}   
 
 th{
     background-color: blue;
@@ -50,10 +56,36 @@ th{
 td{
     border: solid gray 2px;
     background-color: black;
-    opacity: 0.8;
+    opacity: 0.9;
     border-radius: 5px;
+    font-size: 20px;
+    padding-left: 5px;
 }
 
 .invisivel{
     display: none;
+}
+
+tr:hover{
+    border: dashed yellow 3px;
+    box-shadow: 0 0 0.1vw  0.4vw #f8f7ff,   
+    0 0 0.4vw  0.6vw #e97272, 
+    0 0   4vw  0.4vw #e50b0b,
+
+    inset 0 0 1.5vw  0.4vw #e50b0b,
+    inset 0 0 0.4vw  0.2vw #e97272,
+    inset 0 0 0.5vw  0.2vw #fff7f7;
+    border-radius: 1.5rem;
+}
+
+footer{
+    font-family: Ga Maamli;
+    display: flex;
+    gap: 30px;
+}
+
+footer div{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
 }

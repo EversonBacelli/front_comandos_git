@@ -5,7 +5,8 @@ let input = document.querySelector('input')
 
 input.addEventListener('input', (event)=>{
     
-    trs.forEach(tr =>{
+    for (let index = 1; index < trs.length; index++) {
+        const tr = trs[index];
         let tds = tr.children
         let esconder = true
         
@@ -26,7 +27,5 @@ input.addEventListener('input', (event)=>{
                 tr.classList.remove('invisivel')
             }
         }
-     })
-
-
+    }
 })
